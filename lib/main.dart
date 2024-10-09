@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
 import 'config/routes/route.dart';
+import 'config/themes/themes.dart';
 
 final GetIt getIt=GetIt.instance;
 
@@ -23,10 +24,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      themeMode: ThemeMode.system,
+      theme: lightTheme,
+      darkTheme: darkTheme,
       initialRoute: RoutesName.splashScreen,
       onGenerateRoute: Routes.generateRoute,
     );
