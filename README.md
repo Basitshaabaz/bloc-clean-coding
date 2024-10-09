@@ -1,6 +1,11 @@
 # bloc_clean_coding
 
 A new Flutter project.
+- Bloc pattern
+- Clean Coding
+- Api Calling
+- Shared Preferences
+- auto generated model classes using freezed package
 
 ## Getting Started
 
